@@ -7,9 +7,13 @@ public class PlayerStats : MonoBehaviour
     public bool safe = true;
     public float current_food = 50f;
     public float max_food = 100f;
-    public float food_consumption = 0.05f;
+    public float food_consumption = 0.1f;
 
     void Update() {
-        current_food -= food_consumption*Time.deltaTime;
+        if (safe) {
+            current_food -= (food_consumption/2)*Time.deltaTime;
+        } else {
+            current_food -= food_consumption*Time.deltaTime;
+        }
     }
 }

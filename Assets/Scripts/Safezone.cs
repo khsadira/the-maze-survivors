@@ -5,7 +5,6 @@ using UnityEngine;
 public class Safezone : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other) {
-        Debug.Log(other.tag);
         if (other.tag == "Player") {
             other.gameObject.GetComponent<PlayerStats>().safe = true;
         }
