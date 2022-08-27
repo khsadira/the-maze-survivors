@@ -32,10 +32,7 @@ public class PlayerStats : MonoBehaviour
         }
         if (current_food <= 0)
         {
-            if (timeAlive > 126f)
-                mlAgent.AddReward(timeAlive);
-            else
-                mlAgent.AddReward(-100f);
+            mlAgent.AddReward(timeAlive);
             if (gameManager.bestTime < timeAlive)
             {
                 gameManager.bestTime = timeAlive;
