@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public float bestTime = 0.0f;
+    public Camera mainCamera;
 
     void Start()
     {

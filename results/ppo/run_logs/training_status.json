@@ -1,4 +1,35 @@
 {
+    "Survive": {
+        "checkpoints": [
+            {
+                "steps": 25516,
+                "file_path": "results\\ppo\\Survive\\Survive-25516.onnx",
+                "reward": 1133.500000169542,
+                "creation_time": 1661650893.3742347,
+                "auxillary_file_paths": [
+                    "results\\ppo\\Survive\\Survive-25516.pt"
+                ]
+            },
+            {
+                "steps": 221992,
+                "file_path": "results\\ppo\\Survive\\Survive-221992.onnx",
+                "reward": null,
+                "creation_time": 1661651120.3472455,
+                "auxillary_file_paths": [
+                    "results\\ppo\\Survive\\Survive-221992.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 221992,
+            "file_path": "results\\ppo\\Survive.onnx",
+            "reward": null,
+            "creation_time": 1661651120.3472455,
+            "auxillary_file_paths": [
+                "results\\ppo\\Survive\\Survive-221992.pt"
+            ]
+        }
+    },
     "metadata": {
         "stats_format_version": "0.3.0",
         "mlagents_version": "0.28.0",
