@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject Monsters;
 
     public float bestTime = 0.0f;
+    public Camera mainCamera;
 
     public List<Transform> players = new List<Transform>();
     public List<Transform> monsters = new List<Transform>();

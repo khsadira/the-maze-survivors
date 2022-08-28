@@ -81,6 +81,9 @@ behaviors:
           memory: null
           goal_conditioning_type: hyper
           deterministic: false
+      gail:
+        strength: 0.75
+        demo_path: demos/testDemo.demo
     init_path: null
     keep_checkpoints: 5
     checkpoint_interval: 500000
@@ -104,7 +107,7 @@ engine_settings:
   width: 84
   height: 84
   quality_level: 5
-  time_scale: 20
+  time_scale: 1
   target_frame_rate: -1
   capture_frame_rate: 60
   no_graphics: false
