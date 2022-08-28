@@ -13,14 +13,8 @@ public class Food : MonoBehaviour
             PlayerStats stats = other.GetComponent<PlayerStats>();
             stats.current_food += food_quantity;
             if (stats.current_food > stats.max_food)
-            {
-                this.food_quantity = stats.current_food - stats.max_food;
                 stats.current_food = stats.max_food;
-            }
-            else
-            {
-                Destroy(this.gameObject);
-            }
+            this.gameObject.SetActive(false);
         }
     }
 }

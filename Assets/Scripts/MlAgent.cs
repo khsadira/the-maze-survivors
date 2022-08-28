@@ -7,16 +7,15 @@ using Unity.MLAgents.Sensors;
 
 public class MlAgent : Agent
 {
-    [SerializeField] private GameObject[] cubes;
+    [SerializeField] private GameObject foods;
     public override void OnEpisodeBegin()
     {
-        transform.localPosition = new Vector3(Random.Range(-50f, -50f), Random.Range(0f, 0f), 0f);
+        transform.localPosition = new Vector3(Random.Range(-5f, 5f), Random.Range(-5f, 5f), 0f);
         this.GetComponent<PlayerStats>().current_food = 50f;
         this.GetComponent<PlayerStats>().timeAlive = 0f;
-        //for (int i = 0; i < cubes.Length; i++)
-        //{
-        //    cubes[i].transform.localPosition = new Vector3(Random.Range(-60f, 60f), Random.Range(-30f, 30f), 0f);
-        //}
+        for (int i = 0; i < foods.transform.childCount; i++) {
+            foods.transform.GetChild(i).gameObject.SetActive(true);
+        }
     }
 
     public override void CollectObservations(VectorSensor sensor)

@@ -2,31 +2,49 @@
     "Survive": {
         "checkpoints": [
             {
-                "steps": 25516,
-                "file_path": "results\\ppo\\Survive\\Survive-25516.onnx",
-                "reward": 1133.500000169542,
-                "creation_time": 1661650893.3742347,
+                "steps": 499959,
+                "file_path": "results\\ppo\\Survive\\Survive-499959.onnx",
+                "reward": 375.0833225250244,
+                "creation_time": 1661689621.025415,
                 "auxillary_file_paths": [
-                    "results\\ppo\\Survive\\Survive-25516.pt"
+                    "results\\ppo\\Survive\\Survive-499959.pt"
                 ]
             },
             {
-                "steps": 221992,
-                "file_path": "results\\ppo\\Survive\\Survive-221992.onnx",
-                "reward": null,
-                "creation_time": 1661651120.3472455,
+                "steps": 999981,
+                "file_path": "results\\ppo\\Survive\\Survive-999981.onnx",
+                "reward": 350.07017597320834,
+                "creation_time": 1661690604.605384,
                 "auxillary_file_paths": [
-                    "results\\ppo\\Survive\\Survive-221992.pt"
+                    "results\\ppo\\Survive\\Survive-999981.pt"
+                ]
+            },
+            {
+                "steps": 1474754,
+                "file_path": "results\\ppo\\Survive\\Survive-1474754.onnx",
+                "reward": 930.8478566045346,
+                "creation_time": 1661691584.995177,
+                "auxillary_file_paths": [
+                    "results\\ppo\\Survive\\Survive-1474754.pt"
+                ]
+            },
+            {
+                "steps": 1490223,
+                "file_path": "results\\ppo\\Survive\\Survive-1490223.onnx",
+                "reward": 1283.495976836106,
+                "creation_time": 1661692193.4630868,
+                "auxillary_file_paths": [
+                    "results\\ppo\\Survive\\Survive-1490223.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 221992,
+            "steps": 1490223,
             "file_path": "results\\ppo\\Survive.onnx",
-            "reward": null,
-            "creation_time": 1661651120.3472455,
+            "reward": 1283.495976836106,
+            "creation_time": 1661692193.4630868,
             "auxillary_file_paths": [
-                "results\\ppo\\Survive\\Survive-221992.pt"
+                "results\\ppo\\Survive\\Survive-1490223.pt"
             ]
         }
     },
