@@ -32,6 +32,6 @@ public class MlAgent : Agent
     public float speed = 10.0f;
     public override void OnActionReceived(ActionBuffers actions)
     {
-        this.transform.position = new Vector3(this.transform.position.x + actions.ContinuousActions[0] * Time.deltaTime * speed, this.transform.position.y + actions.ContinuousActions[1] * Time.deltaTime * speed, 0f);
+        // this.transform.position = new Vector3(this.transform.position.x + actions.ContinuousActions[0] * Time.deltaTime * speed, this.transform.position.y + actions.ContinuousActions[1] * Time.deltaTime * speed, 0f);
     }
 }

@@ -5,8 +5,13 @@ using UnityEngine;
 public class Safezone : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other) {
-        if (other.tag == "Player") {
-            other.gameObject.GetComponent<PlayerStats>().safe = true;
+        switch (other.tag) {
+            case "Player":
+                other.gameObject.GetComponent<PlayerStats>().safe = true;
+                break;
+            case "Monster":
+                other.gameObject.GetComponent<MonsterScripts>().Destroyer();
+                break;
         }
     }
 

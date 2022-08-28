@@ -6,10 +6,13 @@ public class CollideWall : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
-        {
-            other.GetComponent<PlayerStats>().current_food -= 50f;
-            other.GetComponent<MlAgent>().AddReward(-250f);
+        switch (other.tag) {
+            case "Player":
+                other.GetComponent<PlayerStats>().Destroyer();
+                break;
+            case "Monster":
+                other.GetComponent<MonsterScripts>().Destroyer();
+                break;
         }
     }
 }
