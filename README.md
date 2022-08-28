@@ -11,3 +11,10 @@
 
 -> Zone safe = Inaccessible pour le monstre
                Les joueurs peuvent mourrir de nourriture si ils n'en ont plus n'IMPORTE OU dans la map. (même zone safe)
+
+
+Règle du labyrinthe
+-> Créer un chemin minimum pour aller à la food
+-> Faire en sorte qu'il y ai au moins X/3 sorties disponible de la zone du centre
+-> Faire en sorte que les monstres puissent sortir de leurs zones
+-> Détruire des murs aléatoirement
